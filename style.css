@@ -294,7 +294,12 @@ body{
 }
 }
 
-
+@media(max-width:380px){
+  .home-content{
+  height: 300px;
+  padding: 50px 30px;
+}
+}
 
 #expore{
 background: linear-gradient(135deg, #0B3D2E, #14532D, #1E3A3A);
@@ -324,7 +329,7 @@ min-height: 600px;
   border-radius: 20px;
   flex-grow: 1;
   flex-basis: 620px;
-  height: 300px;
+  min-height: 300px;
   padding: 1px;
 }
 .card img{
@@ -347,7 +352,7 @@ min-height: 600px;
 }
 .card .text-name{
   font-size: 14px;
-  padding: 0 15px;
+  padding: 0 15px 5px;
 }
 .card img:hover{
   transform: scale(1.05);
@@ -424,7 +429,6 @@ min-height: 600px;
 .explore{
   margin: 30px 0  15px 0;
   font-size: 1.9rem;
-  color: red;
   font-weight: 700;
 }
 }
@@ -493,7 +497,23 @@ min-height: 600px;
     height: 300px;
   }
 }
-
+@media(max-width:420px){
+  #about {
+  padding: 80px 0;
+}
+.about-container{
+  flex-wrap: nowrap;
+  padding: 0 12px;
+}
+.about-text h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.about-text p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+}
 
 #contact {
       padding: 80px 20px;
@@ -515,7 +535,7 @@ min-height: 600px;
       gap: 50px;
       max-width: 1100px;
       margin: auto;
-      flex-wrap: wrap;
+      
     }
 
     
@@ -600,8 +620,12 @@ min-height: 600px;
         flex-direction: column;
         text-align: center;
       }
+}
+@media(max-width:420px){
 
-  } 
+}  
+  
+
   footer a:hover {
     color: #22C55E;
     transform: scale(1.1);
